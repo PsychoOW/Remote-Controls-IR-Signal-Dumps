@@ -1,0 +1,272 @@
+blueprint:
+  name: IR Remote Controller
+  description: >
+    Control Home Assistant with a 20-button IR remote.
+    Assign any action to each button.
+  domain: automation
+  input:
+    button_1_actions:
+      name: Button 1
+      description: Actions to run when Button 1 is pressed
+      default: []
+      selector:
+        action: {}
+    button_2_actions:
+      name: Button 2
+      description: Actions to run when Button 2 is pressed
+      default: []
+      selector:
+        action: {}
+    button_3_actions:
+      name: Button 3
+      description: Actions to run when Button 3 is pressed
+      default: []
+      selector:
+        action: {}
+    button_4_actions:
+      name: Button 4
+      description: Actions to run when Button 4 is pressed
+      default: []
+      selector:
+        action: {}
+    button_5_actions:
+      name: Button 5
+      description: Actions to run when Button 5 is pressed
+      default: []
+      selector:
+        action: {}
+    button_6_actions:
+      name: Button 6
+      description: Actions to run when Button 6 is pressed
+      default: []
+      selector:
+        action: {}
+    button_7_actions:
+      name: Button 7
+      description: Actions to run when Button 7 is pressed
+      default: []
+      selector:
+        action: {}
+    button_8_actions:
+      name: Button 8
+      description: Actions to run when Button 8 is pressed
+      default: []
+      selector:
+        action: {}
+    button_9_actions:
+      name: Button 9
+      description: Actions to run when Button 9 is pressed
+      default: []
+      selector:
+        action: {}
+    button_10_actions:
+      name: Button 10
+      description: Actions to run when Button 10 is pressed
+      default: []
+      selector:
+        action: {}
+    button_11_actions:
+      name: Button 11
+      description: Actions to run when Button 11 is pressed
+      default: []
+      selector:
+        action: {}
+    button_12_actions:
+      name: Button 12
+      description: Actions to run when Button 12 is pressed
+      default: []
+      selector:
+        action: {}
+    button_13_actions:
+      name: Button 13
+      description: Actions to run when Button 13 is pressed
+      default: []
+      selector:
+        action: {}
+    button_14_actions:
+      name: Button 14
+      description: Actions to run when Button 14 is pressed
+      default: []
+      selector:
+        action: {}
+    button_15_actions:
+      name: Button 15
+      description: Actions to run when Button 15 is pressed
+      default: []
+      selector:
+        action: {}
+    button_16_actions:
+      name: Button 16
+      description: Actions to run when Button 16 is pressed
+      default: []
+      selector:
+        action: {}
+    button_17_actions:
+      name: Button 17
+      description: Actions to run when Button 17 is pressed
+      default: []
+      selector:
+        action: {}
+    button_18_actions:
+      name: Button 18
+      description: Actions to run when Button 18 is pressed
+      default: []
+      selector:
+        action: {}
+    button_19_actions:
+      name: Button 19
+      description: Actions to run when Button 19 is pressed
+      default: []
+      selector:
+        action: {}
+    button_20_actions:
+      name: Button 20
+      description: Actions to run when Button 20 is pressed
+      default: []
+      selector:
+        action: {}
+
+trigger:
+  - platform: event
+    event_type: esphome.remote_button_1
+    id: button_1
+  - platform: event
+    event_type: esphome.remote_button_2
+    id: button_2
+  - platform: event
+    event_type: esphome.remote_button_3
+    id: button_3
+  - platform: event
+    event_type: esphome.remote_button_4
+    id: button_4
+  - platform: event
+    event_type: esphome.remote_button_5
+    id: button_5
+  - platform: event
+    event_type: esphome.remote_button_6
+    id: button_6
+  - platform: event
+    event_type: esphome.remote_button_7
+    id: button_7
+  - platform: event
+    event_type: esphome.remote_button_8
+    id: button_8
+  - platform: event
+    event_type: esphome.remote_button_9
+    id: button_9
+  - platform: event
+    event_type: esphome.remote_button_10
+    id: button_10
+  - platform: event
+    event_type: esphome.remote_button_11
+    id: button_11
+  - platform: event
+    event_type: esphome.remote_button_12
+    id: button_12
+  - platform: event
+    event_type: esphome.remote_button_13
+    id: button_13
+  - platform: event
+    event_type: esphome.remote_button_14
+    id: button_14
+  - platform: event
+    event_type: esphome.remote_button_15
+    id: button_15
+  - platform: event
+    event_type: esphome.remote_button_16
+    id: button_16
+  - platform: event
+    event_type: esphome.remote_button_17
+    id: button_17
+  - platform: event
+    event_type: esphome.remote_button_18
+    id: button_18
+  - platform: event
+    event_type: esphome.remote_button_19
+    id: button_19
+  - platform: event
+    event_type: esphome.remote_button_20
+    id: button_20
+
+action:
+  - choose:
+      - conditions:
+          - condition: trigger
+            id: button_1
+        sequence: !input button_1_actions
+      - conditions:
+          - condition: trigger
+            id: button_2
+        sequence: !input button_2_actions
+      - conditions:
+          - condition: trigger
+            id: button_3
+        sequence: !input button_3_actions
+      - conditions:
+          - condition: trigger
+            id: button_4
+        sequence: !input button_4_actions
+      - conditions:
+          - condition: trigger
+            id: button_5
+        sequence: !input button_5_actions
+      - conditions:
+          - condition: trigger
+            id: button_6
+        sequence: !input button_6_actions
+      - conditions:
+          - condition: trigger
+            id: button_7
+        sequence: !input button_7_actions
+      - conditions:
+          - condition: trigger
+            id: button_8
+        sequence: !input button_8_actions
+      - conditions:
+          - condition: trigger
+            id: button_9
+        sequence: !input button_9_actions
+      - conditions:
+          - condition: trigger
+            id: button_10
+        sequence: !input button_10_actions
+      - conditions:
+          - condition: trigger
+            id: button_11
+        sequence: !input button_11_actions
+      - conditions:
+          - condition: trigger
+            id: button_12
+        sequence: !input button_12_actions
+      - conditions:
+          - condition: trigger
+            id: button_13
+        sequence: !input button_13_actions
+      - conditions:
+          - condition: trigger
+            id: button_14
+        sequence: !input button_14_actions
+      - conditions:
+          - condition: trigger
+            id: button_15
+        sequence: !input button_15_actions
+      - conditions:
+          - condition: trigger
+            id: button_16
+        sequence: !input button_16_actions
+      - conditions:
+          - condition: trigger
+            id: button_17
+        sequence: !input button_17_actions
+      - conditions:
+          - condition: trigger
+            id: button_18
+        sequence: !input button_18_actions
+      - conditions:
+          - condition: trigger
+            id: button_19
+        sequence: !input button_19_actions
+      - conditions:
+          - condition: trigger
+            id: button_20
+        sequence: !input button_20_actions
