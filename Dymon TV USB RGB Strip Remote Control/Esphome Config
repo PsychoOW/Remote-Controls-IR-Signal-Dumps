@@ -1,0 +1,252 @@
+esphome:
+  name: esphome_web_ir
+  friendly_name: IR Receiver
+  name_add_mac_suffix: false
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+
+# Enable logging
+logger:
+  level: DEBUG
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "redacted"
+
+# Allow Over-The-Air updates
+ota:
+- platform: esphome
+
+# Allow provisioning Wi-Fi via serial
+improv_serial:
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  min_auth_mode: 'WPA2'
+
+remote_receiver:
+  pin:
+    number: GPIO32
+    inverted: true
+    mode:
+      input: true
+      pullup: true
+  dump: all
+
+binary_sensor:
+  - platform: gpio
+    name: "Gas detected"
+    pin:
+      number: GPIO27
+      mode: INPUT_PULLUP
+      inverted: true
+    device_class: gas
+    filters:
+      - delayed_on: 5s
+      - delayed_off: 10s
+
+  - platform: remote_receiver
+    name: "Remote Button 1"
+    nec:
+      address: 0xEF00
+      command: 0xFF00
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_1
+
+  - platform: remote_receiver
+    name: "Remote Button 2"
+    nec:
+      address: 0xEF00
+      command: 0xFE01
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_2
+
+  - platform: remote_receiver
+    name: "Remote Button 3"
+    nec:
+      address: 0xEF00
+      command: 0xFD02
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_3
+
+  - platform: remote_receiver
+    name: "Remote Button 4"
+    nec:
+      address: 0xEF00
+      command: 0xFC03
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_4
+
+  - platform: remote_receiver
+    name: "Remote Button 5"
+    nec:
+      address: 0xEF00
+      command: 0xFB04
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_5
+
+  - platform: remote_receiver
+    name: "Remote Button 6"
+    nec:
+      address: 0xEF00
+      command: 0xFA05
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_6
+
+  - platform: remote_receiver
+    name: "Remote Button 7"
+    nec:
+      address: 0xEF00
+      command: 0xF906
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_7
+
+  - platform: remote_receiver
+    name: "Remote Button 8"
+    nec:
+      address: 0xEF00
+      command: 0xF807
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_8
+
+  - platform: remote_receiver
+    name: "Remote Button 9"
+    nec:
+      address: 0xEF00
+      command: 0xF708
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_9
+
+  - platform: remote_receiver
+    name: "Remote Button 10"
+    nec:
+      address: 0xEF00
+      command: 0xF609
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_10
+
+  - platform: remote_receiver
+    name: "Remote Button 11"
+    nec:
+      address: 0xEF00
+      command: 0xF50A
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_11
+
+  - platform: remote_receiver
+    name: "Remote Button 12"
+    nec:
+      address: 0xEF00
+      command: 0xF40B
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_12
+
+  - platform: remote_receiver
+    name: "Remote Button 13"
+    nec:
+      address: 0xEF00
+      command: 0xF30C
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_13
+
+  - platform: remote_receiver
+    name: "Remote Button 14"
+    nec:
+      address: 0xEF00
+      command: 0xF20D
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_14
+
+  - platform: remote_receiver
+    name: "Remote Button 15"
+    nec:
+      address: 0xEF00
+      command: 0xF10E
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_15
+
+  - platform: remote_receiver
+    name: "Remote Button 16"
+    nec:
+      address: 0xEF00
+      command: 0xF00F
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_16
+
+  - platform: remote_receiver
+    name: "Remote Button 17"
+    nec:
+      address: 0xEF00
+      command: 0xEF10
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_17
+
+  - platform: remote_receiver
+    name: "Remote Button 18"
+    nec:
+      address: 0xEF00
+      command: 0xEE11
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_18
+
+  - platform: remote_receiver
+    name: "Remote Button 19"
+    nec:
+      address: 0xEF00
+      command: 0xED12
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_19
+
+  - platform: remote_receiver
+    name: "Remote Button 20"
+    nec:
+      address: 0xEF00
+      command: 0xEC13
+    on_press:
+      then:
+        - homeassistant.event:
+            event: esphome.remote_button_20
