@@ -5,7 +5,3 @@ Buttons pressed beginning top left to bottom right (refer to photo)
 Actually this one i am using withing Home Assistant, so i will add the config from my esp32 device which only uses the ir receiver and randomly a mq135 sensor lol
 So you have 2 options to make it work, firstly the button press triggers an event that you can automatate in HA or you can make everything on the device itself without home assistant automation. I prefer option 1 because i dont have to compile firmware always, on the other hand thats done usually once and thats it.
 Also i add a blueprint so you can easily automate that in the Home Assistant GUI :)
-
-
-
-
