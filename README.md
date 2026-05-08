@@ -11,3 +11,4 @@ Da ich das Setup sowieso bereits hatte, habe ich angefangen, alle Fernbedienunge
 Zu jedem Dump gibt es ein Bild der jeweiligen Fernbedienung. Auf den Bildern ist die Reihenfolge der gedrückten Tasten zu sehen, sodass man die Signale besser nachvollziehen kann. Die Dumps selbst sind einfache Copy-&-Paste-Ausgaben aus der Konsole und bleiben bewusst unverändert und unbearbeitet.
 
 <img width="1280" height="720" alt="maxresdefault" src="https://github.com/user-attachments/assets/b247cc2a-1e59-4320-993a-36bab939a342" />
+<img width="4032" height="3024" alt="1000064066" src="https://github.com/user-attachments/assets/03b404d7-b60a-4a47-8269-a20c5859856a" />
