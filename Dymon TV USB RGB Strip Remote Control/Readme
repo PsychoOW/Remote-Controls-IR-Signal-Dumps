@@ -1,7 +1,38 @@
-Buttons pressed beginning top left to bottom right (refer to photo)
+English:
+
+Buttons pressed and numbered beginning top left to bottom right (refer to photo)
 1 , 2 , 3 , 4 ,
 5 , 6 , 7 , ...
 
-Actually this one i am using withing Home Assistant, so i will add the config from my esp32 device which only uses the ir receiver and randomly a mq135 sensor lol
-So you have 2 options to make it work, firstly the button press triggers an event that you can automatate in HA or you can make everything on the device itself without home assistant automation. I prefer option 1 because i dont have to compile firmware always, on the other hand thats done usually once and thats it.
-Also i add a blueprint so you can easily automate that in the Home Assistant GUI :)
+Currently, I am using this within Home Assistant, so I will also share the configuration from my ESP32 device. The device currently only uses the IR receiver and additionally an MQ135 sensor, which is unrelated to this project and can simply be ignored.
+
+Basically, there are two ways to make this work:
+
+1. The button press triggers an event that can then be automated in Home Assistant.
+2. All logic is handled directly on the ESP32 device itself, without any Home Assistant automations.
+
+Personally, I prefer option 1 because it avoids constantly recompiling and reflashing the firmware. On the other hand, device-side logic usually only has to be configured once and then works without any further changes.
+
+For this project, I am only sharing option 1, since this is the approach I decided to use and the only one I currently have implemented.
+
+I will also include a Blueprint so the automation can easily be set up through the Home Assistant GUI. Watch out i have an english version and a german one for the esphome device aswell as the blueprint.
+
+
+Deutsch:
+
+Knöpfe wurden nach dem Schema gedrückt und numeriert (siehe Foto)
+1 , 2 , 3 , 4 ,
+5 , 6 , 7 , ...
+
+Aktuell nutze ich das Ganze innerhalb von Home Assistant, daher werde ich auch die Konfiguration meines ESP32-Geräts teilen. Das Device verwendet aktuell nur den IR-Receiver und zusätzlich noch einen MQ135-Sensor, der allerdings nichts mit diesem Projekt zu tun hat und ignoriert bzw ausgelassen werden kann.
+
+Grundsätzlich gibt es zwei Möglichkeiten, das umzusetzen:
+
+1. Der Tastendruck löst ein Event aus, das anschließend in Home Assistant automatisiert wird.
+2. Die komplette Logik läuft direkt auf dem ESP32-Gerät selbst, also ohne Home-Assistant-Automationen.
+
+Ich persönlich bevorzuge Option 1, da ich dadurch die Firmware nicht ständig neu kompilieren und flashen muss. Andererseits wird die geräteseitige Logik meistens nur einmal eingerichtet und läuft danach problemlos.
+
+Für dieses Projekt teile ich allerdings nur Option 1, da ich mich für diese Variante entschieden habe und aktuell auch nur diese umgesetzt habe.
+
+Außerdem füge ich noch ein Blueprint hinzu, damit sich das Ganze einfach über die Home-Assistant-GUI automatisieren lässt. Bitte aufpassen ich habe eine englische sowie eine deutsche Version für esphome und den blueprint.
