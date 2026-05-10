@@ -61,7 +61,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_1
+            event: esphome.ir_remote
+            data:
+              button: "1"
 
   - platform: remote_receiver
     name: "Remote Button 2"
@@ -73,7 +75,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_2
+            event: esphome.ir_remote
+            data:
+              button: "2"
 
   - platform: remote_receiver
     name: "Remote Button 3"
@@ -85,7 +89,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_3
+            event: esphome.ir_remote
+            data:
+              button: "3"
 
   - platform: remote_receiver
     name: "Remote Button 4"
@@ -97,7 +103,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_4
+            event: esphome.ir_remote
+            data:
+              button: "4"
 
   - platform: remote_receiver
     name: "Remote Button 5"
@@ -109,7 +117,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_5
+            event: esphome.ir_remote
+            data:
+              button: "5"
 
   - platform: remote_receiver
     name: "Remote Button 6"
@@ -121,7 +131,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_6
+            event: esphome.ir_remote
+            data:
+              button: "6"
 
   - platform: remote_receiver
     name: "Remote Button 7"
@@ -133,7 +145,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_7
+            event: esphome.ir_remote
+            data:
+              button: "7"
 
   - platform: remote_receiver
     name: "Remote Button 8"
@@ -145,7 +159,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_8
+            event: esphome.ir_remote
+            data:
+              button: "8"
 
   - platform: remote_receiver
     name: "Remote Button 9"
@@ -157,7 +173,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_9
+            event: esphome.ir_remote
+            data:
+              button: "9"
 
   - platform: remote_receiver
     name: "Remote Button 10"
@@ -169,7 +187,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_10
+            event: esphome.ir_remote
+            data:
+              button: "10"
 
   - platform: remote_receiver
     name: "Remote Button 11"
@@ -181,7 +201,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_11
+            event: esphome.ir_remote
+            data:
+              button: "11"
 
   - platform: remote_receiver
     name: "Remote Button 12"
@@ -193,7 +215,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_12
+            event: esphome.ir_remote
+            data:
+              button: "12"
 
   - platform: remote_receiver
     name: "Remote Button 13"
@@ -205,7 +229,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_13
+            event: esphome.ir_remote
+            data:
+              button: "13"
 
   - platform: remote_receiver
     name: "Remote Button 14"
@@ -217,7 +243,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_14
+            event: esphome.ir_remote
+            data:
+              button: "14"
 
   - platform: remote_receiver
     name: "Remote Button 15"
@@ -229,7 +257,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_15
+            event: esphome.ir_remote
+            data:
+              button: "15"
 
   - platform: remote_receiver
     name: "Remote Button 16"
@@ -241,7 +271,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_16
+            event: esphome.ir_remote
+            data:
+              button: "16"
 
   - platform: remote_receiver
     name: "Remote Button 17"
@@ -253,7 +285,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_17
+            event: esphome.ir_remote
+            data:
+              button: "17"
 
   - platform: remote_receiver
     name: "Remote Button 18"
@@ -265,7 +299,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_18
+            event: esphome.ir_remote
+            data:
+              button: "18"
 
   - platform: remote_receiver
     name: "Remote Button 19"
@@ -277,7 +313,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_19
+            event: esphome.ir_remote
+            data:
+              button: "19"
 
   - platform: remote_receiver
     name: "Remote Button 20"
@@ -289,4 +327,6 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.remote_button_20
+            event: esphome.ir_remote
+            data:
+              button: "20"
