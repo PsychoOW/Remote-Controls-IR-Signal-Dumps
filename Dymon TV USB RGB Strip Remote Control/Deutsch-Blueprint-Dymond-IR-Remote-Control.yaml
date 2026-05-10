@@ -126,66 +126,66 @@ blueprint:
       selector:
         action: {}
 
-trigger:
-  - platform: event
-    event_type: esphome.remote_button_1
+triggers:
+  - trigger: event
+    event_type: esphome.ir_taste_1
     id: taste_1
-  - platform: event
-    event_type: esphome.remote_button_2
+  - trigger: event
+    event_type: esphome.ir_taste_2
     id: taste_2
-  - platform: event
-    event_type: esphome.remote_button_3
+  - trigger: event
+    event_type: esphome.ir_taste_3
     id: taste_3
-  - platform: event
-    event_type: esphome.remote_button_4
+  - trigger: event
+    event_type: esphome.ir_taste_4
     id: taste_4
-  - platform: event
-    event_type: esphome.remote_button_5
+  - trigger: event
+    event_type: esphome.ir_taste_5
     id: taste_5
-  - platform: event
-    event_type: esphome.remote_button_6
+  - trigger: event
+    event_type: esphome.ir_taste_6
     id: taste_6
-  - platform: event
-    event_type: esphome.remote_button_7
+  - trigger: event
+    event_type: esphome.ir_taste_7
     id: taste_7
-  - platform: event
-    event_type: esphome.remote_button_8
+  - trigger: event
+    event_type: esphome.ir_taste_8
     id: taste_8
-  - platform: event
-    event_type: esphome.remote_button_9
+  - trigger: event
+    event_type: esphome.ir_taste_9
     id: taste_9
-  - platform: event
-    event_type: esphome.remote_button_10
+  - trigger: event
+    event_type: esphome.ir_taste_10
     id: taste_10
-  - platform: event
-    event_type: esphome.remote_button_11
+  - trigger: event
+    event_type: esphome.ir_taste_11
     id: taste_11
-  - platform: event
-    event_type: esphome.remote_button_12
+  - trigger: event
+    event_type: esphome.ir_taste_12
     id: taste_12
-  - platform: event
-    event_type: esphome.remote_button_13
+  - trigger: event
+    event_type: esphome.ir_taste_13
     id: taste_13
-  - platform: event
-    event_type: esphome.remote_button_14
+  - trigger: event
+    event_type: esphome.ir_taste_14
     id: taste_14
-  - platform: event
-    event_type: esphome.remote_button_15
+  - trigger: event
+    event_type: esphome.ir_taste_15
     id: taste_15
-  - platform: event
-    event_type: esphome.remote_button_16
+  - trigger: event
+    event_type: esphome.ir_taste_16
     id: taste_16
-  - platform: event
-    event_type: esphome.remote_button_17
+  - trigger: event
+    event_type: esphome.ir_taste_17
     id: taste_17
-  - platform: event
-    event_type: esphome.remote_button_18
+  - trigger: event
+    event_type: esphome.ir_taste_18
     id: taste_18
-  - platform: event
-    event_type: esphome.remote_button_19
+  - trigger: event
+    event_type: esphome.ir_taste_19
     id: taste_19
-  - platform: event
-    event_type: esphome.remote_button_20
+  - trigger: event
+    event_type: esphome.ir_taste_20
     id: taste_20
 
 action:
