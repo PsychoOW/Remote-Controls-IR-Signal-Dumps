@@ -40,16 +40,16 @@ remote_receiver:
   dump: all
 
 binary_sensor:
-  - platform: gpio
-    name: "Gas detected"
-    pin:
-      number: GPIO27
-      mode: INPUT_PULLUP
-      inverted: true
-    device_class: gas
-    filters:
-      - delayed_on: 5s
-      - delayed_off: 10s
+#  - platform: gpio
+#    name: "Gas detected"
+#    pin:
+#      number: GPIO27
+#      mode: INPUT_PULLUP
+#      inverted: true
+#    device_class: gas
+#    filters:
+#      - delayed_on: 5s
+#      - delayed_off: 10s
 
   - platform: remote_receiver
     name: "Remote Button 1"
