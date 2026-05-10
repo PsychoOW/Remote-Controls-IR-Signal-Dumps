@@ -4,269 +4,116 @@ blueprint:
     Control Home Assistant with a 20-button IR remote.
     Assign any action to each button.
   domain: automation
+
   input:
-    button_1_actions:
-      name: Button 1
-      description: Actions to run when Button 1 is pressed
-      default: []
-      selector:
-        action: {}
-    button_2_actions:
-      name: Button 2
-      description: Actions to run when Button 2 is pressed
-      default: []
-      selector:
-        action: {}
-    button_3_actions:
-      name: Button 3
-      description: Actions to run when Button 3 is pressed
-      default: []
-      selector:
-        action: {}
-    button_4_actions:
-      name: Button 4
-      description: Actions to run when Button 4 is pressed
-      default: []
-      selector:
-        action: {}
-    button_5_actions:
-      name: Button 5
-      description: Actions to run when Button 5 is pressed
-      default: []
-      selector:
-        action: {}
-    button_6_actions:
-      name: Button 6
-      description: Actions to run when Button 6 is pressed
-      default: []
-      selector:
-        action: {}
-    button_7_actions:
-      name: Button 7
-      description: Actions to run when Button 7 is pressed
-      default: []
-      selector:
-        action: {}
-    button_8_actions:
-      name: Button 8
-      description: Actions to run when Button 8 is pressed
-      default: []
-      selector:
-        action: {}
-    button_9_actions:
-      name: Button 9
-      description: Actions to run when Button 9 is pressed
-      default: []
-      selector:
-        action: {}
-    button_10_actions:
-      name: Button 10
-      description: Actions to run when Button 10 is pressed
-      default: []
-      selector:
-        action: {}
-    button_11_actions:
-      name: Button 11
-      description: Actions to run when Button 11 is pressed
-      default: []
-      selector:
-        action: {}
-    button_12_actions:
-      name: Button 12
-      description: Actions to run when Button 12 is pressed
-      default: []
-      selector:
-        action: {}
-    button_13_actions:
-      name: Button 13
-      description: Actions to run when Button 13 is pressed
-      default: []
-      selector:
-        action: {}
-    button_14_actions:
-      name: Button 14
-      description: Actions to run when Button 14 is pressed
-      default: []
-      selector:
-        action: {}
-    button_15_actions:
-      name: Button 15
-      description: Actions to run when Button 15 is pressed
-      default: []
-      selector:
-        action: {}
-    button_16_actions:
-      name: Button 16
-      description: Actions to run when Button 16 is pressed
-      default: []
-      selector:
-        action: {}
-    button_17_actions:
-      name: Button 17
-      description: Actions to run when Button 17 is pressed
-      default: []
-      selector:
-        action: {}
-    button_18_actions:
-      name: Button 18
-      description: Actions to run when Button 18 is pressed
-      default: []
-      selector:
-        action: {}
-    button_19_actions:
-      name: Button 19
-      description: Actions to run when Button 19 is pressed
-      default: []
-      selector:
-        action: {}
-    button_20_actions:
-      name: Button 20
-      description: Actions to run when Button 20 is pressed
-      default: []
-      selector:
-        action: {}
+    button_1:  { name: "Button 1",  default: [], selector: { action: {} } }
+    button_2:  { name: "Button 2",  default: [], selector: { action: {} } }
+    button_3:  { name: "Button 3",  default: [], selector: { action: {} } }
+    button_4:  { name: "Button 4",  default: [], selector: { action: {} } }
+    button_5:  { name: "Button 5",  default: [], selector: { action: {} } }
+    button_6:  { name: "Button 6",  default: [], selector: { action: {} } }
+    button_7:  { name: "Button 7",  default: [], selector: { action: {} } }
+    button_8:  { name: "Button 8",  default: [], selector: { action: {} } }
+    button_9:  { name: "Button 9",  default: [], selector: { action: {} } }
+    button_10: { name: "Button 10", default: [], selector: { action: {} } }
+    button_11: { name: "Button 11", default: [], selector: { action: {} } }
+    button_12: { name: "Button 12", default: [], selector: { action: {} } }
+    button_13: { name: "Button 13", default: [], selector: { action: {} } }
+    button_14: { name: "Button 14", default: [], selector: { action: {} } }
+    button_15: { name: "Button 15", default: [], selector: { action: {} } }
+    button_16: { name: "Button 16", default: [], selector: { action: {} } }
+    button_17: { name: "Button 17", default: [], selector: { action: {} } }
+    button_18: { name: "Button 18", default: [], selector: { action: {} } }
+    button_19: { name: "Button 19", default: [], selector: { action: {} } }
+    button_20: { name: "Button 20", default: [], selector: { action: {} } }
 
-triggers:
-  - platform: event
-    event_type: esphome.remote_button_1
-    id: button_1
-  - platform: event
-    event_type: esphome.remote_button_2
-    id: button_2
-  - platform: event
-    event_type: esphome.remote_button_3
-    id: button_3
-  - platform: event
-    event_type: esphome.remote_button_4
-    id: button_4
-  - platform: event
-    event_type: esphome.remote_button_5
-    id: button_5
-  - platform: event
-    event_type: esphome.remote_button_6
-    id: button_6
-  - platform: event
-    event_type: esphome.remote_button_7
-    id: button_7
-  - platform: event
-    event_type: esphome.remote_button_8
-    id: button_8
-  - platform: event
-    event_type: esphome.remote_button_9
-    id: button_9
-  - platform: event
-    event_type: esphome.remote_button_10
-    id: button_10
-  - platform: event
-    event_type: esphome.remote_button_11
-    id: button_11
-  - platform: event
-    event_type: esphome.remote_button_12
-    id: button_12
-  - platform: event
-    event_type: esphome.remote_button_13
-    id: button_13
-  - platform: event
-    event_type: esphome.remote_button_14
-    id: button_14
-  - platform: event
-    event_type: esphome.remote_button_15
-    id: button_15
-  - platform: event
-    event_type: esphome.remote_button_16
-    id: button_16
-  - platform: event
-    event_type: esphome.remote_button_17
-    id: button_17
-  - platform: event
-    event_type: esphome.remote_button_18
-    id: button_18
-  - platform: event
-    event_type: esphome.remote_button_19
-    id: button_19
-  - platform: event
-    event_type: esphome.remote_button_20
-    id: button_20
+mode: queued
+max_exceeded: silent
 
-actions:
+trigger:
+  - platform: event
+    event_type: esphome.ir_remote
+
+action:
   - choose:
       - conditions:
-          - condition: trigger
-            id: button_1
-        sequence: !input button_1_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '1' }}"
+        sequence: !input button_1
       - conditions:
-          - condition: trigger
-            id: button_2
-        sequence: !input button_2_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '2' }}"
+        sequence: !input button_2
       - conditions:
-          - condition: trigger
-            id: button_3
-        sequence: !input button_3_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '3' }}"
+        sequence: !input button_3
       - conditions:
-          - condition: trigger
-            id: button_4
-        sequence: !input button_4_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '4' }}"
+        sequence: !input button_4
       - conditions:
-          - condition: trigger
-            id: button_5
-        sequence: !input button_5_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '5' }}"
+        sequence: !input button_5
       - conditions:
-          - condition: trigger
-            id: button_6
-        sequence: !input button_6_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '6' }}"
+        sequence: !input button_6
       - conditions:
-          - condition: trigger
-            id: button_7
-        sequence: !input button_7_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '7' }}"
+        sequence: !input button_7
       - conditions:
-          - condition: trigger
-            id: button_8
-        sequence: !input button_8_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '8' }}"
+        sequence: !input button_8
       - conditions:
-          - condition: trigger
-            id: button_9
-        sequence: !input button_9_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '9' }}"
+        sequence: !input button_9
       - conditions:
-          - condition: trigger
-            id: button_10
-        sequence: !input button_10_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '10' }}"
+        sequence: !input button_10
       - conditions:
-          - condition: trigger
-            id: button_11
-        sequence: !input button_11_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '11' }}"
+        sequence: !input button_11
       - conditions:
-          - condition: trigger
-            id: button_12
-        sequence: !input button_12_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '12' }}"
+        sequence: !input button_12
       - conditions:
-          - condition: trigger
-            id: button_13
-        sequence: !input button_13_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '13' }}"
+        sequence: !input button_13
       - conditions:
-          - condition: trigger
-            id: button_14
-        sequence: !input button_14_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '14' }}"
+        sequence: !input button_14
       - conditions:
-          - condition: trigger
-            id: button_15
-        sequence: !input button_15_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '15' }}"
+        sequence: !input button_15
       - conditions:
-          - condition: trigger
-            id: button_16
-        sequence: !input button_16_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '16' }}"
+        sequence: !input button_16
       - conditions:
-          - condition: trigger
-            id: button_17
-        sequence: !input button_17_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '17' }}"
+        sequence: !input button_17
       - conditions:
-          - condition: trigger
-            id: button_18
-        sequence: !input button_18_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '18' }}"
+        sequence: !input button_18
       - conditions:
-          - condition: trigger
-            id: button_19
-        sequence: !input button_19_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '19' }}"
+        sequence: !input button_19
       - conditions:
-          - condition: trigger
-            id: button_20
-        sequence: !input button_20_actions
+          - condition: template
+            value_template: "{{ trigger.event.data.button == '20' }}"
+        sequence: !input button_20
+    default: []
