@@ -4,269 +4,116 @@ blueprint:
     Steuere Home Assistant mit einer 20-Tasten IR Fernbedienung.
     Weise jeder Taste eine beliebige Aktion zu.
   domain: automation
+
   input:
-    taste_1_aktionen:
-      name: Taste 1
-      description: Aktionen wenn Taste 1 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_2_aktionen:
-      name: Taste 2
-      description: Aktionen wenn Taste 2 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_3_aktionen:
-      name: Taste 3
-      description: Aktionen wenn Taste 3 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_4_aktionen:
-      name: Taste 4
-      description: Aktionen wenn Taste 4 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_5_aktionen:
-      name: Taste 5
-      description: Aktionen wenn Taste 5 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_6_aktionen:
-      name: Taste 6
-      description: Aktionen wenn Taste 6 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_7_aktionen:
-      name: Taste 7
-      description: Aktionen wenn Taste 7 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_8_aktionen:
-      name: Taste 8
-      description: Aktionen wenn Taste 8 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_9_aktionen:
-      name: Taste 9
-      description: Aktionen wenn Taste 9 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_10_aktionen:
-      name: Taste 10
-      description: Aktionen wenn Taste 10 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_11_aktionen:
-      name: Taste 11
-      description: Aktionen wenn Taste 11 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_12_aktionen:
-      name: Taste 12
-      description: Aktionen wenn Taste 12 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_13_aktionen:
-      name: Taste 13
-      description: Aktionen wenn Taste 13 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_14_aktionen:
-      name: Taste 14
-      description: Aktionen wenn Taste 14 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_15_aktionen:
-      name: Taste 15
-      description: Aktionen wenn Taste 15 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_16_aktionen:
-      name: Taste 16
-      description: Aktionen wenn Taste 16 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_17_aktionen:
-      name: Taste 17
-      description: Aktionen wenn Taste 17 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_18_aktionen:
-      name: Taste 18
-      description: Aktionen wenn Taste 18 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_19_aktionen:
-      name: Taste 19
-      description: Aktionen wenn Taste 19 gedrückt wird
-      default: []
-      selector:
-        action: {}
-    taste_20_aktionen:
-      name: Taste 20
-      description: Aktionen wenn Taste 20 gedrückt wird
-      default: []
-      selector:
-        action: {}
+    taste_1:  { name: "Taste 1",  default: [], selector: { action: {} } }
+    taste_2:  { name: "Taste 2",  default: [], selector: { action: {} } }
+    taste_3:  { name: "Taste 3",  default: [], selector: { action: {} } }
+    taste_4:  { name: "Taste 4",  default: [], selector: { action: {} } }
+    taste_5:  { name: "Taste 5",  default: [], selector: { action: {} } }
+    taste_6:  { name: "Taste 6",  default: [], selector: { action: {} } }
+    taste_7:  { name: "Taste 7",  default: [], selector: { action: {} } }
+    taste_8:  { name: "Taste 8",  default: [], selector: { action: {} } }
+    taste_9:  { name: "Taste 9",  default: [], selector: { action: {} } }
+    taste_10: { name: "Taste 10", default: [], selector: { action: {} } }
+    taste_11: { name: "Taste 11", default: [], selector: { action: {} } }
+    taste_12: { name: "Taste 12", default: [], selector: { action: {} } }
+    taste_13: { name: "Taste 13", default: [], selector: { action: {} } }
+    taste_14: { name: "Taste 14", default: [], selector: { action: {} } }
+    taste_15: { name: "Taste 15", default: [], selector: { action: {} } }
+    taste_16: { name: "Taste 16", default: [], selector: { action: {} } }
+    taste_17: { name: "Taste 17", default: [], selector: { action: {} } }
+    taste_18: { name: "Taste 18", default: [], selector: { action: {} } }
+    taste_19: { name: "Taste 19", default: [], selector: { action: {} } }
+    taste_20: { name: "Taste 20", default: [], selector: { action: {} } }
 
-triggers:
-  - trigger: event
-    event_type: esphome.ir_taste_1
-    id: taste_1
-  - trigger: event
-    event_type: esphome.ir_taste_2
-    id: taste_2
-  - trigger: event
-    event_type: esphome.ir_taste_3
-    id: taste_3
-  - trigger: event
-    event_type: esphome.ir_taste_4
-    id: taste_4
-  - trigger: event
-    event_type: esphome.ir_taste_5
-    id: taste_5
-  - trigger: event
-    event_type: esphome.ir_taste_6
-    id: taste_6
-  - trigger: event
-    event_type: esphome.ir_taste_7
-    id: taste_7
-  - trigger: event
-    event_type: esphome.ir_taste_8
-    id: taste_8
-  - trigger: event
-    event_type: esphome.ir_taste_9
-    id: taste_9
-  - trigger: event
-    event_type: esphome.ir_taste_10
-    id: taste_10
-  - trigger: event
-    event_type: esphome.ir_taste_11
-    id: taste_11
-  - trigger: event
-    event_type: esphome.ir_taste_12
-    id: taste_12
-  - trigger: event
-    event_type: esphome.ir_taste_13
-    id: taste_13
-  - trigger: event
-    event_type: esphome.ir_taste_14
-    id: taste_14
-  - trigger: event
-    event_type: esphome.ir_taste_15
-    id: taste_15
-  - trigger: event
-    event_type: esphome.ir_taste_16
-    id: taste_16
-  - trigger: event
-    event_type: esphome.ir_taste_17
-    id: taste_17
-  - trigger: event
-    event_type: esphome.ir_taste_18
-    id: taste_18
-  - trigger: event
-    event_type: esphome.ir_taste_19
-    id: taste_19
-  - trigger: event
-    event_type: esphome.ir_taste_20
-    id: taste_20
+mode: queued
+max_exceeded: silent
 
-actions:
+trigger:
+  - platform: event
+    event_type: esphome.ir_fernbedienung
+
+action:
   - choose:
       - conditions:
-          - condition: trigger
-            id: taste_1
-        sequence: !input taste_1_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '1' }}"
+        sequence: !input taste_1
       - conditions:
-          - condition: trigger
-            id: taste_2
-        sequence: !input taste_2_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '2' }}"
+        sequence: !input taste_2
       - conditions:
-          - condition: trigger
-            id: taste_3
-        sequence: !input taste_3_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '3' }}"
+        sequence: !input taste_3
       - conditions:
-          - condition: trigger
-            id: taste_4
-        sequence: !input taste_4_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '4' }}"
+        sequence: !input taste_4
       - conditions:
-          - condition: trigger
-            id: taste_5
-        sequence: !input taste_5_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '5' }}"
+        sequence: !input taste_5
       - conditions:
-          - condition: trigger
-            id: taste_6
-        sequence: !input taste_6_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '6' }}"
+        sequence: !input taste_6
       - conditions:
-          - condition: trigger
-            id: taste_7
-        sequence: !input taste_7_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '7' }}"
+        sequence: !input taste_7
       - conditions:
-          - condition: trigger
-            id: taste_8
-        sequence: !input taste_8_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '8' }}"
+        sequence: !input taste_8
       - conditions:
-          - condition: trigger
-            id: taste_9
-        sequence: !input taste_9_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '9' }}"
+        sequence: !input taste_9
       - conditions:
-          - condition: trigger
-            id: taste_10
-        sequence: !input taste_10_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '10' }}"
+        sequence: !input taste_10
       - conditions:
-          - condition: trigger
-            id: taste_11
-        sequence: !input taste_11_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '11' }}"
+        sequence: !input taste_11
       - conditions:
-          - condition: trigger
-            id: taste_12
-        sequence: !input taste_12_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '12' }}"
+        sequence: !input taste_12
       - conditions:
-          - condition: trigger
-            id: taste_13
-        sequence: !input taste_13_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '13' }}"
+        sequence: !input taste_13
       - conditions:
-          - condition: trigger
-            id: taste_14
-        sequence: !input taste_14_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '14' }}"
+        sequence: !input taste_14
       - conditions:
-          - condition: trigger
-            id: taste_15
-        sequence: !input taste_15_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '15' }}"
+        sequence: !input taste_15
       - conditions:
-          - condition: trigger
-            id: taste_16
-        sequence: !input taste_16_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '16' }}"
+        sequence: !input taste_16
       - conditions:
-          - condition: trigger
-            id: taste_17
-        sequence: !input taste_17_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '17' }}"
+        sequence: !input taste_17
       - conditions:
-          - condition: trigger
-            id: taste_18
-        sequence: !input taste_18_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '18' }}"
+        sequence: !input taste_18
       - conditions:
-          - condition: trigger
-            id: taste_19
-        sequence: !input taste_19_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '19' }}"
+        sequence: !input taste_19
       - conditions:
-          - condition: trigger
-            id: taste_20
-        sequence: !input taste_20_aktionen
+          - condition: template
+            value_template: "{{ trigger.event.data.taste == '20' }}"
+        sequence: !input taste_20
+    default: []
