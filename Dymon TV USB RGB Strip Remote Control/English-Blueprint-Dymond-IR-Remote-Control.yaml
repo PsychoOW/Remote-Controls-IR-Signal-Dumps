@@ -188,7 +188,7 @@ triggers:
     event_type: esphome.remote_button_20
     id: button_20
 
-action:
+actions:
   - choose:
       - conditions:
           - condition: trigger
