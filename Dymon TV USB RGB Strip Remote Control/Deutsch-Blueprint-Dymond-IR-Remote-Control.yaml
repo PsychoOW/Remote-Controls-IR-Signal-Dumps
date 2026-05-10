@@ -188,7 +188,7 @@ triggers:
     event_type: esphome.ir_taste_20
     id: taste_20
 
-action:
+actions:
   - choose:
       - conditions:
           - condition: trigger
