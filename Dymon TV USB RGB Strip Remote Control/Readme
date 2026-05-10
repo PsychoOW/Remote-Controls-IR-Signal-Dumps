@@ -3,7 +3,12 @@ English:
 Buttons pressed and numbered beginning top left to bottom right (refer to photo)
 1 , 2 , 3 , 4 ,
 5 , 6 , 7 , ...
+<details>
+<summary>🎮 Show Button Layout</summary>
 
+![Button Layout](https://github.com/PsychoOW/Remote-Controls-IR-Signal-Dumps/blob/main/Dymon%20TV%20USB%20RGB%20Strip%20Remote%20Control/Buttons.jpg?raw=true)
+
+</details>
 Currently, I am using this within Home Assistant, so I will also share the configuration from my ESP32 device. The device currently only uses the IR receiver and additionally an MQ135 sensor, which is unrelated to this project and can simply be ignored.
 
 Basically, there are two ways to make this work:
@@ -23,7 +28,12 @@ Deutsch:
 Knöpfe wurden nach dem Schema gedrückt und numeriert (siehe Foto)
 1 , 2 , 3 , 4 ,
 5 , 6 , 7 , ...
+<details>
+<summary>🎮 Show Button Layout</summary>
 
+![Button Layout](https://github.com/PsychoOW/Remote-Controls-IR-Signal-Dumps/blob/main/Dymon%20TV%20USB%20RGB%20Strip%20Remote%20Control/Buttons.jpg?raw=true)
+
+</details>
 Aktuell nutze ich das Ganze innerhalb von Home Assistant, daher werde ich auch die Konfiguration meines ESP32-Geräts teilen. Das Device verwendet aktuell nur den IR-Receiver und zusätzlich noch einen MQ135-Sensor, der allerdings nichts mit diesem Projekt zu tun hat und ignoriert bzw ausgelassen werden kann.
 
 Grundsätzlich gibt es zwei Möglichkeiten, das umzusetzen:
