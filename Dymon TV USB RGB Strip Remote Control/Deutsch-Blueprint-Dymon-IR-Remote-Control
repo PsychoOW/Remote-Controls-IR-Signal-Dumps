@@ -1,0 +1,272 @@
+blueprint:
+  name: IR Fernbedienung Controller
+  description: >
+    Steuere Home Assistant mit einer 20-Tasten IR Fernbedienung.
+    Weise jeder Taste eine beliebige Aktion zu.
+  domain: automation
+  input:
+    taste_1_aktionen:
+      name: Taste 1
+      description: Aktionen wenn Taste 1 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_2_aktionen:
+      name: Taste 2
+      description: Aktionen wenn Taste 2 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_3_aktionen:
+      name: Taste 3
+      description: Aktionen wenn Taste 3 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_4_aktionen:
+      name: Taste 4
+      description: Aktionen wenn Taste 4 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_5_aktionen:
+      name: Taste 5
+      description: Aktionen wenn Taste 5 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_6_aktionen:
+      name: Taste 6
+      description: Aktionen wenn Taste 6 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_7_aktionen:
+      name: Taste 7
+      description: Aktionen wenn Taste 7 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_8_aktionen:
+      name: Taste 8
+      description: Aktionen wenn Taste 8 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_9_aktionen:
+      name: Taste 9
+      description: Aktionen wenn Taste 9 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_10_aktionen:
+      name: Taste 10
+      description: Aktionen wenn Taste 10 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_11_aktionen:
+      name: Taste 11
+      description: Aktionen wenn Taste 11 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_12_aktionen:
+      name: Taste 12
+      description: Aktionen wenn Taste 12 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_13_aktionen:
+      name: Taste 13
+      description: Aktionen wenn Taste 13 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_14_aktionen:
+      name: Taste 14
+      description: Aktionen wenn Taste 14 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_15_aktionen:
+      name: Taste 15
+      description: Aktionen wenn Taste 15 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_16_aktionen:
+      name: Taste 16
+      description: Aktionen wenn Taste 16 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_17_aktionen:
+      name: Taste 17
+      description: Aktionen wenn Taste 17 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_18_aktionen:
+      name: Taste 18
+      description: Aktionen wenn Taste 18 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_19_aktionen:
+      name: Taste 19
+      description: Aktionen wenn Taste 19 gedrückt wird
+      default: []
+      selector:
+        action: {}
+    taste_20_aktionen:
+      name: Taste 20
+      description: Aktionen wenn Taste 20 gedrückt wird
+      default: []
+      selector:
+        action: {}
+
+trigger:
+  - platform: event
+    event_type: esphome.remote_button_1
+    id: taste_1
+  - platform: event
+    event_type: esphome.remote_button_2
+    id: taste_2
+  - platform: event
+    event_type: esphome.remote_button_3
+    id: taste_3
+  - platform: event
+    event_type: esphome.remote_button_4
+    id: taste_4
+  - platform: event
+    event_type: esphome.remote_button_5
+    id: taste_5
+  - platform: event
+    event_type: esphome.remote_button_6
+    id: taste_6
+  - platform: event
+    event_type: esphome.remote_button_7
+    id: taste_7
+  - platform: event
+    event_type: esphome.remote_button_8
+    id: taste_8
+  - platform: event
+    event_type: esphome.remote_button_9
+    id: taste_9
+  - platform: event
+    event_type: esphome.remote_button_10
+    id: taste_10
+  - platform: event
+    event_type: esphome.remote_button_11
+    id: taste_11
+  - platform: event
+    event_type: esphome.remote_button_12
+    id: taste_12
+  - platform: event
+    event_type: esphome.remote_button_13
+    id: taste_13
+  - platform: event
+    event_type: esphome.remote_button_14
+    id: taste_14
+  - platform: event
+    event_type: esphome.remote_button_15
+    id: taste_15
+  - platform: event
+    event_type: esphome.remote_button_16
+    id: taste_16
+  - platform: event
+    event_type: esphome.remote_button_17
+    id: taste_17
+  - platform: event
+    event_type: esphome.remote_button_18
+    id: taste_18
+  - platform: event
+    event_type: esphome.remote_button_19
+    id: taste_19
+  - platform: event
+    event_type: esphome.remote_button_20
+    id: taste_20
+
+action:
+  - choose:
+      - conditions:
+          - condition: trigger
+            id: taste_1
+        sequence: !input taste_1_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_2
+        sequence: !input taste_2_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_3
+        sequence: !input taste_3_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_4
+        sequence: !input taste_4_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_5
+        sequence: !input taste_5_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_6
+        sequence: !input taste_6_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_7
+        sequence: !input taste_7_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_8
+        sequence: !input taste_8_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_9
+        sequence: !input taste_9_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_10
+        sequence: !input taste_10_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_11
+        sequence: !input taste_11_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_12
+        sequence: !input taste_12_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_13
+        sequence: !input taste_13_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_14
+        sequence: !input taste_14_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_15
+        sequence: !input taste_15_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_16
+        sequence: !input taste_16_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_17
+        sequence: !input taste_17_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_18
+        sequence: !input taste_18_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_19
+        sequence: !input taste_19_aktionen
+      - conditions:
+          - condition: trigger
+            id: taste_20
+        sequence: !input taste_20_aktionen
