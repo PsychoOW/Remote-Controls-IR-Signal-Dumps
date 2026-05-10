@@ -56,6 +56,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xFF00
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -66,6 +68,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xFE01
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -76,6 +80,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xFD02
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -86,6 +92,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xFC03
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -96,6 +104,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xFB04
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -106,6 +116,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xFA05
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -116,6 +128,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF906
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -126,6 +140,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF807
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -136,6 +152,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF708
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -146,6 +164,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF609
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -156,6 +176,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF50A
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -166,6 +188,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF40B
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -176,6 +200,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF30C
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -186,6 +212,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF20D
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -196,6 +224,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF10E
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -206,6 +236,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xF00F
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -216,6 +248,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xEF10
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -226,6 +260,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xEE11
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -236,6 +272,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xED12
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
@@ -246,6 +284,8 @@ binary_sensor:
     nec:
       address: 0xEF00
       command: 0xEC13
+    filters:
+      - delayed_off: 500ms
     on_press:
       then:
         - homeassistant.event:
