@@ -61,7 +61,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_1
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "1"
 
   - platform: remote_receiver
     name: "IR Taste 2"
@@ -73,7 +75,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_2
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "2"
 
   - platform: remote_receiver
     name: "IR Taste 3"
@@ -85,7 +89,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_3
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "3"
 
   - platform: remote_receiver
     name: "IR Taste 4"
@@ -97,7 +103,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_4
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "4"
 
   - platform: remote_receiver
     name: "IR Taste 5"
@@ -109,7 +117,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_5
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "5"
 
   - platform: remote_receiver
     name: "IR Taste 6"
@@ -121,7 +131,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_6
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "6"
 
   - platform: remote_receiver
     name: "IR Taste 7"
@@ -133,7 +145,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_7
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "7"
 
   - platform: remote_receiver
     name: "IR Taste 8"
@@ -145,7 +159,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_8
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "8"
 
   - platform: remote_receiver
     name: "IR Taste 9"
@@ -157,7 +173,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_9
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "9"
 
   - platform: remote_receiver
     name: "IR Taste 10"
@@ -169,7 +187,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_10
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "10"
 
   - platform: remote_receiver
     name: "IR Taste 11"
@@ -181,7 +201,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_11
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "11"
 
   - platform: remote_receiver
     name: "IR Taste 12"
@@ -193,7 +215,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_12
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "12"
 
   - platform: remote_receiver
     name: "IR Taste 13"
@@ -205,7 +229,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_13
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "13"
 
   - platform: remote_receiver
     name: "IR Taste 14"
@@ -217,7 +243,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_14
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "14"
 
   - platform: remote_receiver
     name: "IR Taste 15"
@@ -229,7 +257,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_15
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "15"
 
   - platform: remote_receiver
     name: "IR Taste 16"
@@ -241,7 +271,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_16
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "16"
 
   - platform: remote_receiver
     name: "IR Taste 17"
@@ -253,7 +285,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_17
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "17"
 
   - platform: remote_receiver
     name: "IR Taste 18"
@@ -265,7 +299,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_18
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "18"
 
   - platform: remote_receiver
     name: "IR Taste 19"
@@ -277,7 +313,9 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_19
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "19"
 
   - platform: remote_receiver
     name: "IR Taste 20"
@@ -289,4 +327,6 @@ binary_sensor:
     on_press:
       then:
         - homeassistant.event:
-            event: esphome.ir_taste_20
+            event: esphome.ir_fernbedienung
+            data:
+              taste: "20"
