@@ -126,7 +126,7 @@ blueprint:
       selector:
         action: {}
 
-trigger:
+triggers:
   - platform: event
     event_type: esphome.remote_button_1
     id: button_1
